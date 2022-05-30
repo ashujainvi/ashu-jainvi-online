@@ -1,0 +1,46 @@
+html {
+  /* COLORS */
+  --color-blue: #4e5cfc;
+  --color-dark-blue-900: #0d0f29;
+  --color-pink: #fc74f8;
+  --color-purple: #a45ad8;
+  --color-green: #2ff093;
+  --color-teal: #38f9d7;
+  --color-yellow: #ffd324;
+  --color-orange: #fb5d45;
+  --color-red: #cf042a;
+
+  --color-primary: var(--color-red);
+  --color-secondary: var(--color-yellow);
+}
+
+/*
+==============================
+BASE ELEMENTS
+==============================
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: thin dotted var(--color-secondary);
+  }
+}
+
+html,
+body {
+  border: 0;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  // TODO: Use background-color variable as that is used in app.js
+  background-color: var(--color-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  //   color: var(--text-color-200);
+}
